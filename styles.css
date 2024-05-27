@@ -81,8 +81,20 @@ button {
 
 .result-btn {
   padding: 1rem 3rem;
+  cursor: default;
 }
 
-.result-btn:hover {
-  color: rgba(255, 166, 0, 0.6);
+.win {
+  color: rgba(0, 128, 0, 0.9);
+  background-color: rgba(0, 128, 0, 0.3);
+}
+
+.loose {
+  color: rgba(255, 0, 0, 0.9);
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.draw {
+  color: rgba(255, 166, 0, 0.9);
+  background-color: rgba(255, 166, 0, 0.3);
 }

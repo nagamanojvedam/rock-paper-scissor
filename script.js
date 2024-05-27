@@ -29,10 +29,22 @@ function updateScore(result) {
   if (result === "You Win") {
     playerScore++;
     playerScoreEl.innerText = playerScore;
+    resultBtn.classList.remove("loose");
+    resultBtn.classList.remove("draw");
+    resultBtn.classList.add("win");
   }
   if (result === "Computer Wins") {
     computerScore++;
     computerScoreEl.innerText = computerScore;
+    resultBtn.classList.remove("win");
+    resultBtn.classList.remove("draw");
+    resultBtn.classList.add("loose");
+  }
+
+  if (result === "Game Draw") {
+    resultBtn.classList.remove("loose");
+    resultBtn.classList.remove("win");
+    resultBtn.classList.add("draw");
   }
 }
 
