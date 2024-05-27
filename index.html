@@ -16,16 +16,18 @@
     <h1>Rock Paper Scissor</h1>
     <div class="container">
       <div class="score-board">
-        <p>You: <strong>97</strong></p>
-        <p>Computer: <strong>0</strong></p>
+        <p>You: <strong id="player-score">0</strong></p>
+        <p>Computer: <strong id="computer-score">0</strong></p>
       </div>
       <div class="game-options">
-        <button><i class="fa-regular fa-hand-back-fist"></i></button>
-        <button><i class="fa-regular fa-hand"></i></button>
-        <button><i class="fa-regular fa-hand-scissors"></i></button>
+        <button id="rock"><i class="fa-regular fa-hand-back-fist"></i></button>
+        <button id="paper"><i class="fa-regular fa-hand"></i></button>
+        <button id="scissor">
+          <i class="fa-regular fa-hand-scissors"></i>
+        </button>
       </div>
-      <p>You Choose <strong>Rock</strong></p>
-      <p>Computer Choose <strong>Scissor</strong></p>
+      <p>You Choose <strong id="player-choice">Rock</strong></p>
+      <p>Computer Choose <strong id="computer-choice">Scissor</strong></p>
       <button class="result-btn">Your Result</button>
     </div>
     <script src="./script.js"></script>
